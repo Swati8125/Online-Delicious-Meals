@@ -1,0 +1,274 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    /*  background-image: url('food3.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    background-position: center;
+    /*position:absolute;*/
+
+    /* z-index: -1;*/
+
+}
+
+#logo img {
+    width: 106px;
+    height: 105px;
+}
+
+/* #navbar::before {
+    content: "";
+    background-color: hwb(0 0% 100%);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+
+}*/
+
+#navbar {
+    display: flex;
+    align-items: center;
+
+
+}
+
+#navbar ul {
+    display: flex;
+    /* margin: auto;
+    list-style: none;*/
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid black; */
+    border-radius: 300px;
+    list-style: none;
+
+}
+
+#navbar li a:hover,
+#navbar li a:active {
+    color: rgba(215, 242, 10, 0.951);
+    text-decoration: underline;
+}
+
+#navbar li a {
+
+    font-size: 21px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 23px 23px;
+    margin: 23px;
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+#home {
+    display: flex;
+    color: rgb(255, 255, 255);
+    flex-direction: column;
+    padding: 3px 200px;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+}
+
+#home::before {
+    content: "";
+    background: url('');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    background-position: center;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+h1 {
+    padding: 23px;
+    font-size: 2rem;
+    font-family: 'Balsamiq Sans', cursive;
+    text-align: center;
+    margin:40px;
+}
+
+.btn {
+    margin: 22px;
+    padding: 7px;
+    border: 2px solid black;
+    color: rgb(0, 0, 0);
+    font-family: 'Balsamiq Sans', cursive;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 10px;
+    background-color: #f60303;
+}
+
+.btn:hover {
+    background-color:burlywood;
+    cursor: pointer;
+}
+
+#services {
+    display: flex;
+    padding:34px;
+}
+
+.box {
+    padding: 32px;
+    margin: 16px;
+     border-radius: 20px; 
+     border: 2px solid rgb(250, 0, 0); 
+    width: 100%;
+    background-color: #ffffff;
+}
+
+.box img {
+    display: block;
+    height: 160px;
+    margin: auto;
+
+}
+
+h2 {
+    text-align: center;
+    line-height: 2.3rem;
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+#menu {
+    display: flex;
+}
+
+.menu-box {
+    padding: 20px;
+    margin: 16px;
+    /* border-radius: 20px; */
+    /* border: 2px solid rgb(250, 0, 0); */
+    width: 100%;
+    background-color: #ffffff;
+}
+
+.menu-box img {
+    display: block;
+    height: 160px;
+    margin: auto;
+    border-radius: 50%;
+    overflow: hidden;
+
+}
+
+.menu-btn {
+    display: block;
+    margin: auto;
+    margin-bottom: 33px;
+    padding: 7px;
+    border: 2px solid black;
+    color: rgb(0, 0, 0);
+    font-family: 'Balsamiq Sans', cursive;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 10px;
+    background-color: #ff0101;
+
+}
+
+.menu-btn:hover {
+    background-color: burlywood;
+    cursor: pointer;
+}
+
+#clients {
+    display: flex;
+}
+
+.client-box {
+    padding: 16px;
+    margin: 16px;
+    border-radius: 20px;
+
+    width: 100%;
+    /* background-color: #ffffff; */
+}
+
+.client-box img {
+    display: block;
+    height: 160px;
+    margin: auto;
+
+
+
+
+}
+
+.clients-container::before {
+    content: "";
+    background: url('./images/client\ bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    background-position: center;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+
+}
+
+.contact-box {
+    padding: 16px;
+    margin: 16px;
+    border-radius: 20px;
+
+    width: 100%;
+    /* background-color: #ffffff; */
+}
+
+.contact-container::before {
+    content: "";
+    background: url('./images/contact\ bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    background-position: center;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 1.4;
+}
+
+footer {
+   
+    color: black;
+    text-align: center;
+}
+.contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+.contact-box form{
+    width:40%;
+}
+.contact-box label{
+    font-weight: bold;
+    font-size:1.3rem;
+    font-family: 'Balsamiq Sans', cursive; ;
+}
+.contact-box input,.contact-box textarea{
+    width:100%;
+    padding:0.5rem;
+    border-radius: 12px;
+
+
+}

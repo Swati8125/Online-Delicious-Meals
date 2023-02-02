@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating a Responsive Food Website</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" media="screen and (max-width:1170px)"href="CSS/phone.css">
+    <style>
+        * {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    /*  background-image: url('food3.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    background-position: center;
+    /*position:absolute;*/
+
+    /* z-index: -1;*/
+
+}
+
+#logo img {
+    width: 60px;
+    height: 60px;
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+
+}
+
+#navbar {
+    position: relative;
+    display: flex;
+    align-items: center;
+
+
+}
+
+#navbar ul {
+    display: flex;
+    /* margin: auto;
+    list-style: none;*/
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid black; */
+    border-radius: 300px;
+    list-style: none;
+
+}
+
+#navbar li a:hover,
+#navbar li a:active {
+    color: rgba(215, 242, 10, 0.951);
+    text-decoration: underline;
+}
+
+#navbar li a {
+
+    font-size: 21px;
+    color: rgb(255, 255, 255);
+   
+    text-decoration: none;
+    padding: 23px 23px;
+    margin: 23px;
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+#home {
+    display: flex;
+    color: rgb(255, 255, 255);
+    flex-direction: column;
+    padding: 3px 200px;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+}
+
+#home::before {
+    content: "";
+    background: url('./images/food3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    background-position: center;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+h1 {
+    padding: 23px;
+    font-size: 2rem;
+    font-family: 'Balsamiq Sans', cursive;
+    text-align: center;
+    margin:40px;
+}
+
+.btn {
+    margin: 22px;
+    padding: 7px;
+    border: 2px solid black;
+    color: rgb(0, 0, 0);
+    font-family: 'Balsamiq Sans', cursive;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 10px;
+    background-color: #f60303;
+}
+
+.btn:hover {
+    background-color:burlywood;
+    cursor: pointer;
+}
+
+#services {
+    display: flex;
+    padding:0px;
+}
+
+.box {
+    padding: 32px;
+    margin: 16px;
+     border-radius: 20px; 
+     border: 2px solid rgb(250, 0, 0); 
+    width: 100%;
+    background-color: #ffffff;
+}
+
+.box img {
+    display: block;
+    height: 160px;
+    margin: auto;
+
+}
+.box p{
+    font-family: 'Balsamiq Sans', cursive;
+    
+    font-size: 1rem;
+    color:#000000;
+}
+
+#home h2 {
+    margin-top: 32px;
+    text-align: center;
+    line-height: 2.3rem;
+    font-family: 'Balsamiq Sans', cursive;
+}
+#home p{
+    font-family: 'Balsamiq Sans', cursive;
+    text-align: center;
+    font-size: 25px;
+    color:#fffdfe;
+}
+
+#menu {
+    display: flex;
+}
+
+.menu-box {
+    padding: 20px;
+    margin: 16px;
+    /* border-radius: 20px; */
+    /* border: 2px solid rgb(250, 0, 0); */
+    width: 100%;
+    background-color: #ffffff;
+}
+
+.menu-box img {
+    display: block;
+    height: 160px;
+    margin: auto;
+    border-radius: 50%;
+    overflow: hidden;
+
+}
+
+.menu-btn {
+    display: block;
+    margin: auto;
+    margin-bottom: 33px;
+    padding: 7px;
+    border: 2px solid black;
+    color: rgb(0, 0, 0);
+    font-family: 'Balsamiq Sans', cursive;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 10px;
+    background-color: #ff0101;
+
+}
+
+.menu-btn:hover {
+    background-color: burlywood;
+    cursor: pointer;
+}
+
+#clients {
+    display: flex;
+}
+
+.client-box {
+    padding: 16px;
+    margin: 16px;
+    border-radius: 20px;
+
+    width: 100%;
+    /* background-color: #ffffff; */
+}
+
+.client-box img {
+    display: block;
+    height: 160px;
+    margin: auto;
+
+
+
+
+}
+
+.clients-container::before {
+    content: "";
+    background: url('./images/client\ bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    background-position: center;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+
+}
+
+.contact-box {
+    padding: 16px;
+    margin: 16px;
+    border-radius: 20px;
+
+    width: 100%;
+    /* background-color: #ffffff; */
+}
+
+.contact-container::before {
+    content: "";
+    background: url('./images/contact\ bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    background-position: center;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 1.4;
+}
+
+footer {
+   
+    color: black;
+    text-align: center;
+}
+.contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+.contact-box form{
+    width:40%;
+}
+.contact-box label{
+    font-weight: bold;
+    font-size:1.3rem;
+    font-family: 'Balsamiq Sans', cursive; ;
+}
+.contact-box input,.contact-box textarea{
+    width:100%;
+    padding:0.5rem;
+    border-radius: 12px;
+
+
+}
+    </style>
+</head>
+
+
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="./images/logo.webp" alt="remote image">
+            <div></div>
+        </div>
+        <ul>
+            <li class="item"><a href="#">Home</a></li>
+            <li class="item"><a href="#">Services</a></li>
+            <li class="item"><a href="#">About Us</a></li>
+            <li class="item"><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <section id="home">
+        <h1 class="HOME">Welcome to MY DAMN DELICIOUS MEALS</h1>
+        <p>Unlimited Tasty and Healthy food</p>
+            
+        <p>Just for $5</p>
+        
+        <button class="btn">Order Now</button>
+    </section>
+    
+    <section class="services-container">
+        <h1>Our Services</h1>
+        <div id="services">
+            <div class="box">
+                <img src="./images/1.1.jpg" alt="remote image">
+                <h2>Food Ordering</h2>
+                <p>Order food online from restaurants get it delivered. Serving in Patna. Order Pizzas, Burgers, Biryanis, Desserts or order from Subway, Pizza Hut, Dominos,and many more at just one click!!
+                </p>
+            </div>
+            <div class="box">
+                <img src="./images/2.jpg" alt="remote image">
+                <h2>Food Catering</h2>
+                <p>Enjoy Delectable Food from a Range of Cuisines by Hiring Reliable Caterers in Patna.List of best caterers in Patna with prices & reviews.  </p>
+            </div>
+            <div class="box">
+                <img src="./images/3.jpg" alt="remote image">
+                <h2>Food Delivery</h2>
+                <p>Great restaurants in Patna, delivering to you ; Biryani by Choice. Indian, Chinese, Salads ; Samosa Darbaar. Snacks ; Postik Platter. Juices, Beverages, Salads.</p>
+            </div>
+        </div>
+
+    </section>
+    <hr>
+    <section class="menu-container">
+        <h1>Our Top Menu</h1>
+        <div id="menu">
+            <div class="menu-box">
+                <img src="./images/menu1.jpg" alt="remote image">
+                <h2>Italian Food</h2>
+
+            </div>
+            <div class="menu-box">
+                <img src="./images/menu2.jpg" alt="remote image">
+                <h2>Continental Food</h2>
+
+            </div>
+            <div class="menu-box">
+                <img src="./images/menu3.webp" alt="remote image">
+                <h2>Indian Food</h2>
+
+            </div>
+        </div>
+        <button class="menu-btn">View More</button>
+    </section>
+    <hr>
+    <section class="clients-container">
+        <h1>Our Clients</h1>
+        <div id="clients">
+            <div class="client-box">
+                <img src="./images/logo1.png" alt="remote image">
+
+            </div>
+            <div class="client-box">
+                <img src="./images/logo2.png" alt="remote image">
+
+            </div>
+            <div class="client-box">
+                <img src="./images/logo3.png" alt="remote image">
+            </div>
+            <div class="client-box">
+                <img src="./images/logo4.png" alt="remote image">
+            </div>
+        </div>
+    </section>
+    
+    <section class="contact-container">
+        <h1>Contact Us</h1>
+        <div id="contact">
+            <div class="contact-box">
+                <form action="">
+                    <label>Name:</label><br>
+                    <div>
+    <input type="text" name="name" id="name" placeholder="Enter your Name">
+    </div>
+
+    <br>
+
+    <div>
+        <label> Email Id:</label><br>
+       <input type="email" name="email" id="name" placeholder="Enter your Email Id">
+       
+        </div>
+
+        <br>
+
+    <div>
+        <label>Phone Number:</label><br>
+         <input type=" number" name="phone" id="name" placeholder="Enter your phone number">
+        </div>
+
+        <br>
+    <div>
+        <label> Message:</label><br>
+      <textarea name="message" id="message" cols="30" rows="10"></textarea>
+        </div>
+
+    </form>
+    </div>
+            </div>
+    </section>
+    <footer>
+        <div class="last-section">
+            Copyright &copy;www.myDamnDeliciousMeals.com. All rights reserved!
+        </div>
+    </footer>
+
+
+
+
+
+</body>
+
+</html>
